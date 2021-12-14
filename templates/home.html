@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dog breed finder</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div >
+    <nav class="navbar navbar-dark bg-dark" style="background-color: #e3f2fd;">
+        <h1>
+            <a class="nav-link" href="/">Home</a>
+            <a class="navbar-brand" href="/about">About</a>
+        </h1>
+    </nav>
+</div>
+
+{% block body %}
+<div class="container">
+    <h1 class="jumbotron bg-primary">Dog breed finder</h1>
+    <h2><a href="/index">Click to get started</a></h2>
+    <img src="{{url_for('static', filename='homepage.jpg')}}"  width="800" height="400" align="center">
+    <h2>This model is trained on following dog breeds.</h2>
+    <div>
+        <ul>
+            <li>Pomeranian</li>
+            <li>Shih-Tzu </li>
+            <li>Afghan_hound</li>
+            <li>Pug</li>
+            <li>Beagle</li>
+            <li>Bulldog</li>
+            <li>Dalmation</li>
+            <li>Siberian_husky</li>
+            <li>Japanese_spaniel</li>
+            <li>Labrador_retriever</li>
+            <li>Saint_Bernard</li>
+            <li>African_hunting_dog</li>
+            <li>Great_Dane</li>
+            <li>German_shepherd</li>
+            <li>Rottweiler</li>
+            <li>Chihuahua</li>
+            <li>Tibetan_mastiff</li>
+            <li>Toy_poodle</li>
+            <li>Golden_retriever</li>
+            <li>Doberman</li>
+        </ul>
+    </div>
+
+</div>
+{% endblock body %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="bottomleft">
+    <p>©2021 Hrishikesh Jadhav</p>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+

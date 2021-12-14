@@ -1,0 +1,14 @@
+{% extends 'home.html' %}
+{% block title %} Home{% endblock title %}
+{% block body %}
+<div class="container">
+        <h1 class="jumbotron">The model is built using transfer learning from the Resnet50 and adding custom layers
+                successfully recognize the gender giving certain picture with 93.4% of accuracy over the test data.
+                Nevertheless, there are some limitations detected and opportunities for improvements:
+        </h1>
+        <img src="{{url_for('static', filename='confusion matrix.png')}}"  width="2000" height="2000" align="left">
+        <img src="{{url_for('static', filename='Loss Function.png')}}"  width="1000" height="500" align="center">
+        <img src="{{url_for('static', filename='Accuracy Function.png')}}"  width="1000" height="500" align="center">
+</div>
+
+{% endblock body %}
